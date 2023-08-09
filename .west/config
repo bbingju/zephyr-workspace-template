@@ -1,0 +1,11 @@
+[manifest]
+path = app
+file = west.yml
+project-filter = -hal_*,+hal_rpi_pico
+
+[zephyr]
+base = deps/zephyr
+
+[build]
+dir-fmt = build/{board}/{app}
+
